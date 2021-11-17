@@ -1,0 +1,31 @@
+<section class="form1body">
+    <h1 class="addressform1 text-center">Register with your Aadhar Card</h1>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <p style="font-size: 10px; text-align: left;">Please enter  patient details to add</p>
+          </div>
+        </div>
+        <form class="login-form" action="/add" method="POST">
+        <input class="form-control" type="text" name="username" id="username" placeholder="Patient Name" required />
+        <input class="form-control" type="text" name="dob" id="dob" placeholder="Date of Birth" required />
+        <input class="form-control" type="text" name="gender" id="gender" placeholder="Gender" required />
+        <input class="form-control" type="number" name="phone" id="phone" placeholder="Phone Number" required />
+        <input class="form-control" type="email" name="email" id="email" placeholder="username@email.com" required />
+        <input class="form-control" type="text" name="occupation" id="occupation" placeholder="Occupation" required />
+        <label class="form-control"style="font-size: 20px; font-family: 'Open Sans', sans-serif; font-weight: 700; "  for="country-state">Id type</label>
+        <select name="Idtype" id="Idtype" class="form-control">
+            <option value="Aadhar">Aadhar</option>
+            <option value="Pan">Pan</option>
+        </select>
+        <input class="form-control" type="text" name="IdNumber" id="IdNumber" placeholder="Id number" required />
+        
+            <button class=getstarted type="submit"><span> Add </span></button>
+        </form>
+      </div>
+    </div>
+ </section>
+
+
+

@@ -1,0 +1,34 @@
+<section class="form1body">
+    <table id="dashboard" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Db Id</th>
+                <th>Internal Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Contact Number</th>
+                <th>Occupation</th>
+                <th>Id type</th>
+                <th>Id Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% userdata.forEach(function(data) { %>
+                <tr>
+                    <td><%= data._id %> </td>
+                    <td><%= data.InternalId %> </td>
+                    <td><%= data.username %> </td>
+                    <td><%= data.email %> </td>
+                    <td><%= data.dob %> </td>
+                    <td><%= data.gender %> </td>
+                    <td><%= data.phone %> </td>
+                    <td><%= data.occupation %> </td>
+                    <td><%= data.Idtype %> </td>
+                    <td><%= data.IdNumber %> </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</section>
